@@ -5,3 +5,15 @@
   color: #414141;
   font-weight: bold;
 }
+
+.items-total-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  color: #414141;
+}
