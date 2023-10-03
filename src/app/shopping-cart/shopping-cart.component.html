@@ -1,0 +1,12 @@
+<ng-container *ngIf="(products$ | async)!.length >= 1">
+  <app-shopping-cart-item
+    *ngFor="let product of products$ | async"
+    [product]="product">
+  </app-shopping-cart-item>
+</ng-container>
+
+<h1 
+  *ngIf="(products$ | async)!.length === 0" 
+  class="empty">
+  No hay productos en el carrito 
+</h1>

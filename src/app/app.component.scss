@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 1em;
+  background-color: #f1f1f1;
+  align-items: center;
+
+  .title {
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.icon {
+  font-size: 2em;
+  cursor: pointer;
+  position: relative;
+
+  .cart-items-counter {
+    position: absolute;
+    top: 0;
+    right: -5px;
+    color: white;
+    background-color: rgb(235, 37, 37);
+    border-radius: 50%;
+    font-size: .5em;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
