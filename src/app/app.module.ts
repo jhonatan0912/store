@@ -9,6 +9,7 @@ import { ShoppingCartItemComponent } from './shopping-cart/shopping-cart-item/sh
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
+import { SendFormComponent } from './shopping-cart/send-form/send-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     ProductListComponent,
     ProductComponent,
     ShoppingCartItemComponent,
-    FilterPipe
+    FilterPipe,
+    SendFormComponent
   ],
   imports: [
     BrowserModule,

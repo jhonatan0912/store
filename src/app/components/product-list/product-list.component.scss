@@ -17,6 +17,10 @@
   }
 }
 
+// .product-list needs to be responsive
+
+
+
 .product-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,5 +31,25 @@
     width: fit-content;
     margin: auto;
     height: min-content;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .product-list {
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-gap: .5em !important;
+
   }
 }

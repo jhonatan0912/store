@@ -1,6 +1,9 @@
 <section class="items-total-container">
 
-  <div class="items">
+  <div class="items" [ngClass]="{'has-items':(products$ | async)!.length >= 1}">
+    <h1 *ngIf="(products$ | async)!.length === 0" class="empty">
+      No hay productos en el carrito
+    </h1>
 
     <ng-container *ngIf="(products$ | async)!.length >= 1">
       <app-shopping-cart-item 
@@ -9,14 +12,16 @@
       </app-shopping-cart-item>
     </ng-container>
     
-    <h1 *ngIf="(products$ | async)!.length === 0" class="empty">
-      No hay productos en el carrito
-    </h1>
   </div>
 
-  <div class="total">
-    Total: {{ total$ | async | currency:'S/':'symbol':'1.2-2' }}
-  </div>
+  <section class="total">
+    <div>
+      Total: {{ total$ | async | currency:'S/':'symbol':'1.2-2' }}
+    </div>
+
+  
+    <app-send-form></app-send-form>
+  </section>
 
 </section>
 

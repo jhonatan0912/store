@@ -12,8 +12,8 @@ export interface Product {
 
 @Component({
   selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  templateUrl: 'product.component.html',
+  styleUrls: ['product.component.scss']
 })
 export class ProductComponent {
 
