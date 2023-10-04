@@ -2,10 +2,11 @@ header {
   display: flex;
   justify-content: space-between;
   padding: .5em 1em;
-  background-color: #f1f1f1;
+  background-color:rgb(55, 58, 60);
   align-items: center;
 
   .title {
+    color: #f4f4f4;
     font-size: 2em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;

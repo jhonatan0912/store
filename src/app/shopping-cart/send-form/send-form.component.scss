@@ -5,7 +5,7 @@ label {
 
 input[type="text"],
 input[type="email"] {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
@@ -15,15 +15,35 @@ input[type="email"] {
 .send-form {
   max-width: 400px;
   margin-top: 2em;
+  padding: 40px;
+  margin: 0 20%;
+  border: solid 1px #000;
+  h2{
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+  div{
+    margin-top: 10px;
+  }
+}
+
+.button {
+  // margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .submit {
-  background-color: #000;
+  background-color: #373737;
   color: #fff;
   border: none;
-  padding: 10px;
+  padding: 10px 50px;
   border-radius: 5px;
   cursor: pointer;
-  width: 100%;
+  // width: 100%;
   font-size: 1.2em;
+}
+
+.submit:hover{
+  background-color: #000;
 }

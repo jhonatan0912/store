@@ -1,8 +1,11 @@
+
 <section class="items-total-container">
 
   <div class="items" [ngClass]="{'has-items':(products$ | async)!.length >= 1}">
     <h1 *ngIf="(products$ | async)!.length === 0" class="empty">
-      No hay productos en el carrito
+      No hay productos en el carrito <br><br><br>
+      <a class="back" href="../">Agregar</a>
+
     </h1>
 
     <ng-container *ngIf="(products$ | async)!.length >= 1">

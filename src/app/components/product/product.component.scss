@@ -6,7 +6,7 @@
    border: 1px solid #ccc;
    border-radius: 5px;
    width: 200px;
-   padding: 1em;
+   padding: 2em;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
    transition: all 0.3s ease-in-out;
    cursor: pointer;
@@ -28,6 +28,8 @@
    }
 
    .product-info {
+      text-align: center;
+
       &__price {
          font-size: 24px;
          font-weight: bold;
@@ -48,8 +50,8 @@
       transition: all 0.3s ease-in-out;
 
       &:hover {
-         background-color: #f0c040;
-         color: #000;
+         background-color: #2e2e2e;
+         color: #fff;
       }
    }
 }
