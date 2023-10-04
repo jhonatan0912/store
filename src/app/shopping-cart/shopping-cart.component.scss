@@ -11,15 +11,9 @@
   grid-template-columns: 1fr 1fr;
   margin: 2em 1em 0 1em;
   gap: 2em;
-
-  // .has-items {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 1fr);
-  //   gap: 1em;
-  // }
 }
 
-.back{
+.back {
   background-color: rgb(217, 42, 42);
   padding: 10px 40px;
   text-decoration: none;
@@ -30,7 +24,7 @@
   cursor: pointer;
 }
 
-.back:hover{
+.back:hover {
   background-color: rgb(175, 15, 15);
 }
 
@@ -42,7 +36,7 @@
   flex-direction: column;
 }
 
-.total > div{
+.total>div {
   margin: 0 20%;
   margin-bottom: 30px;
   padding: 20px 40px;

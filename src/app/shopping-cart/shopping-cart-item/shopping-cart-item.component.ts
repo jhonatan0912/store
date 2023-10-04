@@ -1,18 +1,21 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Product } from 'src/app/components/product/product.component';
+import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 
 @Component({
   selector: 'app-shopping-cart-item',
   templateUrl: 'shopping-cart-item.component.html',
   styleUrls: ['shopping-cart-item.component.scss']
 })
-export class ShoppingCartItemComponent implements OnInit {
+export class ShoppingCartItemComponent {
 
   @Input() product!: Product;
 
-  constructor() { }
+  constructor(
+    private shoppingCartService: ShoppingCartService
+  ) { }
 
-  ngOnInit() {
+  remove() {
+    this.shoppingCartService.deleteProduct(this.product);
   }
-
 }

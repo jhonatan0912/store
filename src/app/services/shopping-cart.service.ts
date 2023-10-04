@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from "rxjs/operators";
+import { Product } from '../components/product/product.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShoppingCartService {
 
+  shoppingCartProducts: BehaviorSubject<Product[]> = new BehaviorSubject<Product[]>([]);
 
-  shoppingCartProducts: BehaviorSubject<any> = new BehaviorSubject<any>([]);
-
-  addToCart(product: any) {
+  addToCart(product: Product) {
     let products = this.shoppingCartProducts.getValue();
     if (!products) {
       products = [];
@@ -22,7 +22,7 @@ export class ShoppingCartService {
     }
   }
 
-  getProducts() {
+  getProducts(): Observable<Product[]> {
     return this.shoppingCartProducts.asObservable();
   }
 
@@ -30,7 +30,7 @@ export class ShoppingCartService {
     this.shoppingCartProducts.next([]);
   }
 
-  deleteProduct(product: any) {
+  deleteProduct(product: Product) {
     let products = this.shoppingCartProducts.getValue();
     products = products.filter((item: any) => item.id !== product.id);
     this.shoppingCartProducts.next(products);

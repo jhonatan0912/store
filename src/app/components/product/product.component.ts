@@ -9,7 +9,6 @@ export interface Product {
   description: string;
 }
 
-
 @Component({
   selector: 'app-product',
   templateUrl: 'product.component.html',
@@ -19,9 +18,7 @@ export class ProductComponent {
 
   constructor(
     private shoppingCartService: ShoppingCartService
-  ) {
-
-  }
+  ) { }
 
   @Input() product!: Product;
 
