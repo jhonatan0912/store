@@ -4,7 +4,7 @@
   <div class="items" [ngClass]="{'has-items':(products$ | async)!.length >= 1}">
     <h1 *ngIf="(products$ | async)!.length === 0" class="empty">
       No hay productos en el carrito <br><br><br>
-      <a class="back" href="../">Agregar</a>
+      <a class="back" routerLink="/product">Agregar</a>
 
     </h1>
 

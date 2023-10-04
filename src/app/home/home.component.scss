@@ -1,0 +1,143 @@
+.navbar{
+   // background-color: rgb(234, 234, 234);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: solid 1px #616161;
+   .logo{
+      width: 200px;
+      img{
+         width: 100%;
+      }
+    }
+}
+
+.menu{
+   margin-right: 50px;
+   ul {
+      color: #2e2e2e;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 5em;
+      list-style: none;
+      .items{
+         padding: 0 15px;
+         div{
+            display: flex;
+            align-items: center;
+            a{
+               text-decoration: none;
+               color: #131313;
+            }
+         }
+      }
+      
+      .items:hover{
+         color: rgb(100, 100, 100);
+         border-bottom: solid  3px #f36d59;
+         
+        
+      }
+   }
+}
+
+.icon {
+   font-size: 2em;
+   cursor: pointer;
+   position: relative;
+ 
+   .cart-items-counter {
+     position: absolute;
+     top: 0;
+     right: -5px;
+     color: white;
+     background-color: rgb(235, 37, 37);
+     border-radius: 50%;
+     font-size: .5em;
+     width: 16px;
+     height: 16px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+ }
+
+.content{
+   background-image: url("https://images.pexels.com/photos/1841841/pexels-photo-1841841.jpeg?cs=srgb&dl=pexels-sy-donny-1841841.jpg&fm=jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   height: 800px;
+   margin-top: 20px;
+   .background{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(41, 41, 41, 0.773);
+      height: 800px;
+   }
+   
+}
+
+.content-items{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #fff;
+   h1{
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 100px;
+   }
+   .description{
+      border: solid 1px #fff;
+      text-align: center;
+      width: 400px;
+      padding: 20px 20px;
+   }
+}
+
+.button{
+   margin-top: 100px;
+   a{
+      padding: 10px 30px;
+      border: solid 1px #fff;
+      text-decoration: none;
+      color: #fff;
+   }
+   a:hover{
+      background-color: #131313;
+   }
+}
+
+.footer{
+   border-top: solid 1px #616161;
+   text-align: center;
+   padding: 20px ;
+}
+
+.about{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 80px 0;
+
+   img{
+      width: 320px;
+      border-radius: 10px;
+   }
+
+   div{
+      width: 400px;
+      text-align: center;
+      h1{
+         font-size: 30px;
+         font-weight: bold;
+         margin-bottom: 20px;
+      }
+   }
+}
