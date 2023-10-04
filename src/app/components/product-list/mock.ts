@@ -1,5 +1,4 @@
-import { Product } from "../product/product.component";
-
+import { Product } from "src/app/interfaces";
 
 const generatePrice = (): number => {
 

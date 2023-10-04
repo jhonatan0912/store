@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from './services/shopping-cart.service';
 import { Router } from '@angular/router';
+import { Product } from './interfaces';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  shoppingCartItems: any;
+  shoppingCartItems: Product[] = [];
 
   constructor(
     private shoppingCartService: ShoppingCartService,

@@ -8,7 +8,9 @@ import { ShoppingCartService } from '../../services/shopping-cart.service';
 })
 export class SendFormComponent {
 
-  constructor(private shoppingCartService: ShoppingCartService) { }
+  constructor(
+    private shoppingCartService: ShoppingCartService
+  ) { }
 
   submit() {
     this.shoppingCartService.clearCart();

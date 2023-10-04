@@ -1,11 +1,11 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { Product } from '../components/product/product.component';
+import { Product } from '../interfaces';
 
 @Pipe({
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
-  
+
   transform(products: Product[], ...args: unknown[]): Product[] {
     const searchText = args[0] as string;
     if (!products || !searchText) {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Product } from '../product/product.component';
 import { products } from './mock';
+import { Product } from 'src/app/interfaces';
 
 
 @Component({
@@ -11,5 +11,5 @@ import { products } from './mock';
 export class ProductListComponent {
 
   products: Product[] = products;
-  searchText: string = '';
+  searchValue: string = '';
 }

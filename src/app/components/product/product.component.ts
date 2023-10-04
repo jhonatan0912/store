@@ -1,13 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { Product } from 'src/app/interfaces';
 import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
-
-export interface Product {
-  id: string;
-  image: string;
-  name: string;
-  price: number;
-  description: string;
-}
 
 @Component({
   selector: 'app-product',

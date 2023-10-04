@@ -4,12 +4,12 @@
   <input
     type="text"
     placeholder="Buscar producto"
-    [(ngModel)]="searchText" />
+    [(ngModel)]="searchValue" />
 </div>
 
 <section class="product-list">
   <app-product
-    *ngFor="let product of products | filter: searchText"
+    *ngFor="let product of products | filter: searchValue"
     [product]="product">
   </app-product>
 </section>
