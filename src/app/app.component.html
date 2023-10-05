@@ -1,4 +1,50 @@
-<header>
+<div class="navbar">
+  <div class="logo">
+     <a routerLink="/">
+        <img src="https://cdn.domestika.org/c_fit,dpr_auto,f_auto,q_80,t_base_params,w_820/v1629325390/content-items/008/843/426/colormabo-01-original.png?1629325390" alt="">
+     </a>
+  </div>
+  <div class="menu">
+     <ul>
+        <li class="items">
+        <div>
+           <a href="/#">
+              LOCAL
+           </a>
+        </div>
+        </li>
+
+        <li class="items">
+        <div>
+           <a href="/#">
+              NOSOTROS
+           </a>
+        </div>
+        </li>
+
+        <li class="items">
+        <div>
+           <a href="" routerLink="/product">
+              PRODUCTOS
+           </a>
+        </div>
+        </li>
+
+        <li>
+        <div class="icon" (click)="viewCart()"> 
+           <span class="cart-items-counter">
+             {{ shoppingCartItems.length }}
+           </span>
+           👜
+         </div>
+        </li>
+     </ul>
+  </div>
+</div>
+
+
+
+<!-- <header>
   <h1 class="title" routerLink="/">
     Store
   </h1>
@@ -9,6 +55,10 @@
     </span>
     👜
   </div>
-</header>
+</header> -->
 
 <router-outlet></router-outlet>
+
+<div class="footer">
+  <p>Derechos reservados - clay system</p>
+</div>

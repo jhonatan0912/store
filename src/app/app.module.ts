@@ -10,6 +10,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './pipes/filter.pipe';
 import { SendFormComponent } from './shopping-cart/send-form/send-form.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SendFormComponent } from './shopping-cart/send-form/send-form.component
     ProductComponent,
     ShoppingCartItemComponent,
     FilterPipe,
-    SendFormComponent
+    SendFormComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
