@@ -1,5 +1,4 @@
 .navbar{
-  // background-color: rgb(234, 234, 234);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,12 +32,12 @@
            }
         }
      }
-     
+
      .items:hover{
         color: rgb(100, 100, 100);
         border-bottom: solid  3px #f36d59;
-        
-       
+
+
      }
   }
 }
@@ -70,42 +69,3 @@
   padding: 20px ;
   margin-top: 60px;
 }
-
-
-
-// header {
-//   display: flex;
-//   justify-content: space-between;
-//   padding: .5em 1em;
-//   background-color:rgb(55, 58, 60);
-//   align-items: center;
-
-//   .title {
-//     color: #f4f4f4;
-//     font-size: 2em;
-//     font-family: 'Courier New', Courier, monospace;
-//     font-weight: bold;
-//     cursor: pointer;
-//   }
-// }
-
-// .icon {
-//   font-size: 2em;
-//   cursor: pointer;
-//   position: relative;
-
-//   .cart-items-counter {
-//     position: absolute;
-//     top: 0;
-//     right: -5px;
-//     color: white;
-//     background-color: rgb(235, 37, 37);
-//     border-radius: 50%;
-//     font-size: .5em;
-//     width: 20px;
-//     height: 20px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
-// }
